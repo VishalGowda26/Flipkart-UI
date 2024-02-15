@@ -42,10 +42,17 @@ const Header = () => {
 
           {/*--------------> Cart <------------ */}
           <Link
-            to={"/"}
+            to={"/cart"}
             className="hover:bg-blue-50 active:bg-violet-700 focus:ring focus:ring-blue-50 p-3 rounded-md hover:outline-offset-2 "
           >
             Cart
+          </Link>
+          {/*--------------> Register <------------ */}
+          <Link
+            to={"/seller/register"}
+            className="hover:bg-blue-50 active:bg-violet-700 focus:ring focus:ring-blue-50 p-3 rounded-md hover:outline-offset-2 "
+          >
+            Register
           </Link>
         </div>
       </nav>

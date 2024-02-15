@@ -8,13 +8,14 @@ import navs from "./Component/Routes/Navigations.jsx";
 const user = {
   username: "",
   role: "SELLER",
-  isAuthenticated: true,
+  isAuthenticated: false,
 };
 const { role, isAuthenticated } = user;
 
 const allRoutes = () => {
   return (
-    <Route path={"/"} element={<App />}>
+    <>
+    {/* // <Route path={"/"} element={<App />}> */}
       {navs.map((nav, i) => {
         if (isAuthenticated) {
           if (nav.isVisibleAfterAuth) {
@@ -30,13 +31,15 @@ const allRoutes = () => {
           }
         }
       })}
-    </Route>
+    {/* </Route> */}
+    </>
   );
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
+    <App/>
       <Routes>{allRoutes()}</Routes>
     </BrowserRouter>
   </React.StrictMode>
