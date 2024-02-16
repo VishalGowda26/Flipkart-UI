@@ -34,7 +34,7 @@ const Header = () => {
 
           {/* -----------> Become a Seller Option <--------*/}
           <Link
-            to={"/"}
+            to={"/seller/register"}
             className="hover:bg-blue-50 active:bg-violet-700 focus:outline-none focus:ring focus:ring-blue-50 p-3 rounded-md"
           >
             Become a Seller
@@ -42,17 +42,24 @@ const Header = () => {
 
           {/*--------------> Cart <------------ */}
           <Link
-            to={"/cart"}
+            to={""}
             className="hover:bg-blue-50 active:bg-violet-700 focus:ring focus:ring-blue-50 p-3 rounded-md hover:outline-offset-2 "
           >
             Cart
           </Link>
           {/*--------------> Register <------------ */}
           <Link
-            to={"/seller/register"}
+            to={"/customer/register"}
             className="hover:bg-blue-50 active:bg-violet-700 focus:ring focus:ring-blue-50 p-3 rounded-md hover:outline-offset-2 "
           >
             Register
+          </Link>
+          {/*--------------> Verify OTP <------------ */}
+          <Link
+            to={"/verify-otp"}
+            className="hover:bg-blue-50 active:bg-violet-700 focus:ring focus:ring-blue-50 p-3 rounded-md hover:outline-offset-2 "
+          >
+            Verify OTP
           </Link>
         </div>
       </nav>
